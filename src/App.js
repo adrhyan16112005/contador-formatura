@@ -30,7 +30,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Contador de Formatura – Mileny Beatriz G. dos Santos – Informática 6A</h1>
+      <h1>Contador de Formatura –Adrhyan Vinicius Nunes Flores– Informática 6A</h1>
 
       {timeLeft ? (
         <div className="contador">
