@@ -4,7 +4,7 @@ import foto from "./foto.jpg";
 
 function App() {
   const [timeLeft, setTimeLeft] = useState({});
-  const targetDate = new Date("2025-12-20T00:00:00");
+  const targetDate = new Date("2025-12-15T00:00:00");
 
   function updateTimer() {
     const now = new Date();
