@@ -1,43 +1,87 @@
 .App {
   text-align: center;
   padding: 20px;
-  font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #001f3f, #003366);
-  color: white;
+  font-family: "Poppins", Arial, sans-serif;
+  background: linear-gradient(135deg, #2d0f4e, #4f271f, #3f1f0a);
+  color: #ffffff;
   min-height: 100vh;
+  transition: all 0.3s ease-in-out;
 }
 
+/* Contador */
 .contador {
-  font-size: 1.5rem;
-  margin-top: 20px;
+  font-size: 1.7rem;
+  margin-top: 25px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  animation: fadeIn 1.5s ease-in-out;
 }
 
+/* Mensagem final */
 .mensagem-final {
-  font-size: 2rem;
-  margin-top: 30px;
-  color: #00ff99;
+  font-size: 2.3rem;
+  margin-top: 35px;
+  color: #e63a00;
+  font-weight: bold;
+  text-shadow: 0 0 12px #bb420e;
+  animation: glow 2s infinite alternate;
 }
 
+/* Texto futuro */
 .texto-futuro {
-  margin-top: 30px;
-  font-size: 1.3rem;
+  margin-top: 35px;
+  font-size: 1.4rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+  opacity: 0.95;
 }
 
+/* Imagem */
 .imagem {
-  margin-top: 30px;
+  margin-top: 35px;
   width: 260px;
-  border-radius: 10px;
-  border: 3px solid white;
+  border-radius: 18px;
+  border: 3px solid #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
 }
 
+.imagem:hover {
+  transform: scale(1.05);
+}
+
+/* Animações */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 12px #c87413;
+  }
+  to {
+    text-shadow: 0 0 22px #b02c18;
+  }
+}
+
+/* Responsivo */
 @media (max-width: 600px) {
   .contador {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
   .mensagem-final {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
   .imagem {
-    width: 180px;
+    width: 190px;
   }
 }
